@@ -1,0 +1,81 @@
+.emails {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+.newBtn {
+  max-width: 100px;
+  height: 35px;
+  padding: 2px;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+
+  border-collapse: collapse;
+  color: #222222;
+}
+.th {
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  &:first-child {
+    width: 150px;
+  }
+  &:not(:first-child) {
+    width: 100%;
+  }
+}
+td {
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  &:first-child {
+    width: 150px;
+    text-align: center;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+
+    &:disabled {
+      background-color: #cccccc;
+      cursor: auto;
+    }
+  }
+}
+td.total {
+  text-align: right;
+  padding-right: 15px;
+}
